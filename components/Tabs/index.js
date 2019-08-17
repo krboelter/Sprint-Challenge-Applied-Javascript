@@ -12,8 +12,6 @@ let topics = document.querySelector('.topics');
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
     .then((response) => {
-        console.log(response)
-
         let topicsArray = response.data.topics
         
         topicsArray.forEach(newTopic => {
@@ -23,7 +21,8 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
 
     function addTab(obj) {
         let tab = document.createElement('div')
-        tab.classList.add('tab')
+        tab.classList.add(`tab`)
+        tab.classList.add(`${obj}`)
         tab.textContent = `${obj}`
 
         return tab

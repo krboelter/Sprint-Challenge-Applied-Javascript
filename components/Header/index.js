@@ -3,7 +3,7 @@
 // Using a function create the component you see below:
 //
 //  <div class="header">
-//    <span class="date">SMARCH 28, 2019</span>
+//    <span class="date">MARCH 28, 2019</span>
 //    <h1>Lambda Times</h1>
 //    <span class="temp">98°</span>
 //  </div >
@@ -17,6 +17,7 @@ function Header() {
 
     let span = document.createElement('span')
     span.classList.add('date')
+    span.textContent = 'MARCH 28, 2019'
     div.appendChild(span)
 
     let h1 = document.createElement('h1')
