@@ -29,14 +29,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+    It is the document object Model and it is a tree of objects that can be used to display information.
 
 2. What is an event?
+    An event is an interaction.  Events can be a click, a scroll, etc.  They often manipulate the DOM.
 
 3. What is an event listener?
+    An event listener is a function that listens for an event, such as a click or key press.  It takes a defined string such as
+    "click" or "keydown" and a callback function.
 
 4. Why would we convert a NodeList into an Array?
+    We would want to convert a NodeList into an array so we can use an array function such as .forEach or .map on the nodes.  If you want to change all of the nodes (example all of the "p" nodes on the page), you can apply a function to them all with .forEach.
 
 5. What is a component?
+    A component is a function that produces a chunk of code to be used over and over again.  It can include functions, event listeners, it often includes many new, created elements and assigns context to those elements.
 
 ### Git Set up
 
@@ -68,3 +74,5 @@ Your stretch challenge is to write the functionality of a `Carousel` component. 
 * [ ] Create an 'infinite loop' carousel. In which as long as you click on an arrow, the array of images will loop over itself.
 
 * [ ] If you have finished the above, research `data attributes`. Implement data attributes within your tabs as well as your cards. Give the tabs functionality so that when they are clicked they filter the cards to only display the cards that contain that topic.
+
+Kenneth Boelter
